@@ -77,7 +77,6 @@ import static java.util.Collections.emptyMap;
 import static java.util.Collections.emptySet;
 import static java.util.Collections.emptySortedSet;
 import static java.util.Collections.unmodifiableSet;
-import static org.apache.solr.common.cloud.UrlScheme.HTTP;
 import static org.apache.solr.common.util.Utils.fromJSON;
 
 public class ZkStateReader implements SolrCloseable {
@@ -151,6 +150,9 @@ public class ZkStateReader implements SolrCloseable {
   public static final String COLLECTION_DEF = "collectionDefaults";
 
   public static final String URL_SCHEME = "urlScheme";
+  public static final String HTTP = "http";
+  public static final String HTTPS = "https";
+  public static final String HTTPS_PORT_PROP = "solr.jetty.https.port";
   private static final String DEFAULT_URL_SCHEME = System.getProperty("urlScheme", "http");
 
   private static final String SOLR_ENVIRONMENT = "environment";

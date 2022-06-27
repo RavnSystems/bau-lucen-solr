@@ -3,6 +3,20 @@ Lucene Change Log
 For more information on past and future Lucene versions, please see:
 http://s.apache.org/luceneversions
 
+======================= Lucene 8.11.2 =======================
+
+Bug Fixes
+---------------------
+* LUCENE-10564: Make sure SparseFixedBitSet#or updates ramBytesUsed. (Julie Tibshirani)
+
+* LUCENE-10477: Highlighter: WeightedSpanTermExtractor.extractWeightedSpanTerms to Query#rewrite
+  multiple times if necessary. (Christine Poerschke, Adrien Grand)
+
+Optimizations
+---------------------
+
+* LUCENE-10481: FacetsCollector will not request scores if it does not use them. (Mike Drob)
+
 ======================= Lucene 8.11.1 =======================
 
 Bug Fixes
